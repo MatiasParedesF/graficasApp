@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+import { NgChartsModule } from 'ng2-charts';
 import { GraficasRoutingModule } from './graficas-routing.module';
 import { BarrasComponent } from './pages/barras/barras.component';
 import { DonaComponent } from './pages/dona/dona.component';
@@ -15,11 +16,14 @@ import { BarrasDobleComponent } from './pages/barras-doble/barras-doble.componen
     DonaComponent,
     DonaHttpComponent,
     GraficaBarraComponent,
-    BarrasDobleComponent
+    BarrasDobleComponent,
+    
   ],
   imports: [
     CommonModule,
-    GraficasRoutingModule
+    GraficasRoutingModule,
+    NgChartsModule
+
   ]
 })
 export class GraficasModule { }
